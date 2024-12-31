@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light cyan background */
+    margin: 0;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    border: 2px solid #00bcd4; /* Light cyan border */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Light cyan color for the title */
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark color for the time display */
+    font-weight: bold;
+}
+
+.controls button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #00bcd4; /* Light cyan for buttons */
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+    background-color: #0097a7; /* Darker cyan on hover */
+}
+
+.controls button:disabled {
+    background-color: #b0bec5; /* Gray when disabled */
+    cursor: not-allowed;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h2 {
+    font-size: 1.5rem;
+    color: #34495e; /* Dark gray for lap section title */
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.laps li {
+    background-color: #ecf0f1; /* Light gray background for lap items */
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #2c3e50; /* Dark color for lap time text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.laps li:nth-child(even) {
+    background-color: #bdc3c7; /* Light gray for even lap items */
+}
